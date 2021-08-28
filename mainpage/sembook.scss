@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Nunito:wght@600&display=swap');
+$spaceblue: #03091C;
+
+*{
+    margin: 0%;
+}
+html{
+    background-color:rgba($color: $spaceblue, $alpha: 0.8);
+    height: 100%;
+    body{
+        height: 100%;
+    }
+}
+nav{
+    height: 90px;
+    h2{
+        margin-inline: 2%;
+        font-size: 40px;
+        font-family: 'Lobster Two', cursive;
+        color: white;
+    }
+    div{
+        width: 100%;
+        height: 40px;
+        background-image: url('https://wallpaperaccess.com/full/2562631.jpg');
+        background-size: cover;
+        button{
+            font-size: 25px;
+            margin-top: 5px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .logout{
+            float: right;
+            margin-right: 2%;
+        }
+        .book{
+            margin-left: 2%;
+        }
+    }
+}
+section{
+    height: 100%;
+    .popup{
+        position: absolute;
+        display: none;
+        height: 99%;
+        width: 300px;
+        font-family: 'Nunito', sans-serif;
+        background-color: wheat;
+        padding-top: 0.5%;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        z-index: 1;
+        h2{
+            margin-inline: 2.5%;
+            border-bottom: 3px solid black;
+        }
+        .popup-icon{
+            float: right;
+            font-size: 20px;
+            margin-top: 8px;
+            margin-right: 2.5%;
+            cursor: pointer;
+        }
+        .popup-display{
+            ul{
+                padding-left: 5%;
+                list-style-type: none;
+            }
+            li{
+                width: 90%;
+                padding: 1.5%;
+                padding-inline: 0;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+        }
+    }
+    .book-page{
+        width: 100%;
+        height: 100%;
+        .toolbar{
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 45px;
+            background-color: wheat;
+            border-bottom: 2px solid black;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            .start{
+                border-left: 2px solid grey;
+            }
+            div{
+                border-right: 2px solid gray;
+                width: fit-content;
+                height: fit-content;
+                float: left;
+                text-align: center;
+            }
+            .pageformat{
+                margin-left: 10%;
+            }
+            ul{
+                padding: 0%;
+                font-size: 20px;
+                float: right;
+                list-style-type: none;
+            }
+            li{ 
+                float: left;
+                width: fit-content;
+                padding-inline: 5px;
+                margin: 0%;
+                label{
+                    font-size: 15px;
+                }
+            }
+            .icon{
+                padding: 5px;
+            }
+            .save{
+                height: 45px;
+                padding-inline: 10px;
+            }
+        }
+        .page-section{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .page{
+            width: 70%;
+            height: 100%;
+            margin-top: 5%;
+            padding: 5%;
+            background-color: white;
+            box-sizing: 0px 0px 5px 15px black;
+            resize: none;
+            img{
+                float: left;
+            }
+        }
+        .page:focus{
+            outline: none;
+        }
+    }
+}

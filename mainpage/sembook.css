@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Nunito:wght@600&display=swap");
+* {
+  margin: 0%;
+}
+
+html {
+  background-color: rgba(3, 9, 28, 0.8);
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+nav {
+  height: 90px;
+}
+
+nav h2 {
+  margin-inline: 2%;
+  font-size: 40px;
+  font-family: 'Lobster Two', cursive;
+  color: white;
+}
+
+nav div {
+  width: 100%;
+  height: 40px;
+  background-image: url("https://wallpaperaccess.com/full/2562631.jpg");
+  background-size: cover;
+}
+
+nav div button {
+  font-size: 25px;
+  margin-top: 5px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav div .logout {
+  float: right;
+  margin-right: 2%;
+}
+
+nav div .book {
+  margin-left: 2%;
+}
+
+section {
+  height: 100%;
+}
+
+section .popup {
+  position: absolute;
+  display: none;
+  height: 99%;
+  width: 300px;
+  font-family: 'Nunito', sans-serif;
+  background-color: wheat;
+  padding-top: 0.5%;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  z-index: 1;
+}
+
+section .popup h2 {
+  margin-inline: 2.5%;
+  border-bottom: 3px solid black;
+}
+
+section .popup .popup-icon {
+  float: right;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-right: 2.5%;
+  cursor: pointer;
+}
+
+section .popup .popup-display ul {
+  padding-left: 5%;
+  list-style-type: none;
+}
+
+section .popup .popup-display li {
+  width: 90%;
+  padding: 1.5%;
+  padding-inline: 0;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+section .book-page {
+  width: 100%;
+  height: 100%;
+}
+
+section .book-page .toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: wheat;
+  border-bottom: 2px solid black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+section .book-page .toolbar .start {
+  border-left: 2px solid grey;
+}
+
+section .book-page .toolbar div {
+  border-right: 2px solid gray;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  float: left;
+  text-align: center;
+}
+
+section .book-page .toolbar .pageformat {
+  margin-left: 10%;
+}
+
+section .book-page .toolbar ul {
+  padding: 0%;
+  font-size: 20px;
+  float: right;
+  list-style-type: none;
+}
+
+section .book-page .toolbar li {
+  float: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 5px;
+  margin: 0%;
+}
+
+section .book-page .toolbar li label {
+  font-size: 15px;
+}
+
+section .book-page .toolbar .icon {
+  padding: 5px;
+}
+
+section .book-page .toolbar .save {
+  height: 45px;
+  padding-inline: 10px;
+}
+
+section .book-page .page-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+section .book-page .page {
+  width: 70%;
+  height: 100%;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: white;
+  -webkit-box-sizing: 0px 0px 5px 15px black;
+          box-sizing: 0px 0px 5px 15px black;
+  resize: none;
+}
+
+section .book-page .page img {
+  float: left;
+}
+
+section .book-page .page:focus {
+  outline: none;
+}
+/*# sourceMappingURL=sembook.css.map */
